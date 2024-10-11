@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: white;
+  background-color: white; 
 }
 
 .head {
@@ -115,16 +115,24 @@ html {
   margin: 0;
   padding: 0;
 }
-
-.fa-brands {
-  display: flex;
-  flex-direction: row;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 3em;
-  margin-right: 1em;
+.icones-sociais-1{
+  margin-left: 17em;
 }
 
+.icones-sociais-1 i {
+  font-size: 40px;
+  margin-right: 20px;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icones-sociais-1 a {
+  text-decoration: none; 
+}
+
+.icones-sociais-1 i:hover {
+  transform: scale(1.1); 
+}
 section {
   padding: 2rem;
   background-color: #080831;
@@ -178,6 +186,7 @@ strong {
   border-radius: 40px;
   font-size: 23px;
   text-decoration: none;
+  transition: transform 0.3s ease-in-out;
 }
 
 .text-body {
@@ -187,18 +196,6 @@ strong {
   color: white;
   margin-bottom: 2em;
 }
-
-.contatos {
-  text-align: center;
-  margin-top: 3em;
-  margin-right: 2em;
-  margin-left: 2em;
-}
-
-.contatos a {
-  text-decoration: none;
-}
-
 .titulo-body {
   color: #000000;
   font-size: 2em;
@@ -232,7 +229,6 @@ strong {
 .texto p {
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 20px;
 }
 
 .technologies {
@@ -245,7 +241,8 @@ strong {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
-  margin-left: 17em;
+  margin-left: 20em;
+  margin-bottom: 10em;
 }
 
 .tech-card {
@@ -258,6 +255,11 @@ strong {
   font-family: Arial, Helvetica, sans-serif;
   flex-basis: calc(100% / 6 - 30px);
   max-width: calc(100% / 6 - 30px);
+  transition: transform 0.3s ease-in-out;
+
+}
+.tech-card:hover{
+  transform: scale(1.1); 
 }
 
 .tech-card img {
@@ -275,44 +277,37 @@ strong {
   margin-top: 6em;
 }
 
-.projetos-container {
-  display: flex;
-  justify-content: center;
-  gap: 1000px;
-}
-
 .card-projeto {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 500px;
+  justify-content: center;
+  width: 600px;
   height: 300px;
-  position: absolute;
+  position: relative;
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: 0.5s;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
+  transition: 0.4s ease-in-out;
+  margin-left: 14em;
+  margin-top: 8em;
+  display: inline-block;
 }
 
 .card-projeto:hover {
-  height: 468px;
-  width: 38em;
+  height: 400px;
 }
 
 .card-projeto .img-box-projeto {
-  border-radius: 20px;
   position: absolute;
-  width: 33em;
-  height: 100%;
-  top: 0;
+  width: 600px;
+  top: 5px;
   transition: 0.5s;
+
 }
 
 .card-projeto:hover .img-box-projeto {
-  border-radius: 20px;
-  top: -220px;
-  scale: 0.75;
-  width: 48em;
+  top: -210px;
+  scale: 0.95;
+  width: 632px;
 }
 
 .card-projeto .img-box-projeto img {
@@ -320,52 +315,45 @@ strong {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  text-align: justify;
+
 }
 
 .card-projeto .content-projeto {
   display: flex;
   flex-direction: column;
-  gap: 18px;
   position: absolute;
-  top: 270px;
+  bottom: 0;
   width: 100%;
   padding: 0px 30px;
   text-align: center;
-  height: 20px;
+  height: 0px;
   overflow: hidden;
   transition: 0.5s;
+  margin-bottom: 4em;
 }
 
 .card-projeto:hover .content-projeto {
-  top: 150px;
-  height: 20em;
-  padding: 1em;
-  width: 29em;
+  bottom: 11px;
+  height: 220px;
+  width: 35em;
+  text-align: justify;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
 }
 
 .card-projeto .read-more-projeto {
-  background: linear-gradient(90deg, #111016, #51227a);
-  padding: 12px;
-  color: #fff;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.card-projeto .read-more-projeto:hover {
-  transform: scale(1.9);
-}
-
-.text-projeto {
-  font-family: "Noto Sans", sans-serif;
-  text-align: justify;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.card-projeto .content-projeto h2 {
-  margin-bottom: 1px;
+ background: linear-gradient(90deg, #3730a3, #7e22ce);
+ padding: 10px;
+ width: 30em;
+ margin-left: 1em;
+ color: #fff;
+ height: 17px;
+ text-decoration: none;
+ border-radius: 5px;
+ text-align: center;
+ margin-top: 12px;
 }
 
 .contato-container {
@@ -373,50 +361,49 @@ strong {
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  background-color: #080831; /* Cor de fundo escura */
+  background-color: #080831; 
   border-radius: 14px;
   max-width: 1200px;
   margin: 50px auto;
   color: white;
 }
-
 .contato-info h2 {
-  color: #ff5403; /* Cor do título */
-  margin-bottom: 20px; /* Espaço inferior */
+  color: #ff5403; 
   font-size: 2em;
+  margin-left: 5em;
 }
-
 .lista-info {
   list-style: none;
   padding: 0;
+  margin-bottom: 6em;
 }
-
 .lista-info li {
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 23px;
+  margin-bottom: 1em;
 }
-
+.icones-sociais{
+  margin-left: 12em;
+}
 .icones-sociais i {
   font-size: 26px;
   margin-right: 13px;
   color: white;
-  transition: transform 0.3s ease-in-out; /* Animação suave no hover */
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 2em;  
 }
-
 .icones-sociais a {
-  text-decoration: none; /* Remove sublinhado dos links */
+  text-decoration: none; 
 }
-
 .icones-sociais i:hover {
-  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+  transform: scale(1.1); 
 }
-
 .formulario-contato {
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 40%; /* Ajuste a largura do formulário */
+  width: 50%; 
 }
 
 .formulario-contato button {
@@ -429,24 +416,25 @@ strong {
   cursor: pointer;
   font-size: 18px;
   transition: transform 0.3s ease-in-out;
+  margin-left: 12em;
 }
-
-.formulario-contato button:hover {
-  background-color: #e04d02;
-  transform: scale(1.1); /* Aumenta o botão no hover */
+.formulario-contato button:hover{
+  transform: scale(1.1); 
 }
 
 .nome-email {
-  width: 100%;
+  width: 36em;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .mensagem {
-  width: 100%;
+  width: 36em;
   height: 9em;
   resize: none;
   padding: 10px;
@@ -454,20 +442,5 @@ strong {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-@media (max-width: 768px) {
-  .contato-container {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .formulario-contato {
-    width: 100%; /* Ajuste para dispositivos menores */
-  }
-
-  .icones-sociais {
-    margin: 20px 0;
-  }
-}
-
