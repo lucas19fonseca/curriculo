@@ -1,70 +1,44 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('header a');
-    const offset = 190; 
-  
-    links.forEach(link => {
-      link.addEventListener('click', (e) => {
-        const href = link.getAttribute('href');
-  
-        if (href.endsWith('.pdf') || link.target === '_blank') {
-          return; 
-        }
-  
-        e.preventDefault(); 
-  
-        const targetSection = document.querySelector(href); 
-  
-        if (targetSection) {
-          const elementPosition = targetSection.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - offset;
-  
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-        }
-      });
+//envio do form
+document.getElementById("form-contato").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    const nome = document.getElementById("nome-contato").value;
+    const email = document.getElementById("email-contato").value;
+    const mensagem = document.getElementById("mensagem-contato").value;
+    if (nome === "" || email === "" || mensagem === "") {
+        alert("Por favor, preencha todos os campos.");
+        return;
+    }
+    alert(`Obrigado, ${nome}! Sua mensagem foi enviada com sucesso.`);
+    document.getElementById("form-contato").reset();
+});
+//rolagem de baixo pra cima
+const button = document.getElementById('lucas');
+
+button.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
     });
-  });
-  
-
-document.addEventListener('DOMContentLoaded', () => {
-    const lucasLink = document.querySelector('.titulo-lucas a'); 
-    lucasLink.addEventListener('click', (e) => {
-        e.preventDefault(); 
-
-        window.scrollTo({
-            top: 0, 
-            behavior: 'smooth' 
-        });
+});
+//rolagem das Âncoras
+document.querySelectorAll('.hearder-info').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+                if (href.startsWith("#")) {
+            e.preventDefault(); 
+            const targetElement = document.querySelector(href);
+            
+            if (targetElement) { 
+                window.scrollTo({
+                    top: targetElement.offsetTop - 190, 
+                    behavior: 'smooth' 
+                });
+            }
+        }
     });
 });
 
-  (function() {
-    emailjs.init("lucas19fonseca@gmail.com"); 
-  })();
-  
-  document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault(); 
 
-    const nome = document.querySelector('input[name="nome"]').value;
-    const email = document.querySelector('input[name="email"]').value;
-    const mensagem = document.querySelector('textarea[name="mensagem"]').value;
-
-    const templateParams = {
-      from_name: nome,
-      from_email: email,
-      message: mensagem
-    };
-
-    emailjs.send('seu_service_id', 'seu_template_id', templateParams)
-      .then(function(response) {
-        alert('Mensagem enviada com sucesso!');
-      }, function(error) {
-        alert('Ocorreu um erro ao enviar sua mensagem. Tente novamente.');
-        console.log('Erro:', error);
-      });
-  });
 
 
 

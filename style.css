@@ -442,5 +442,19 @@ strong {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .contato-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .formulario-contato {
+    width: 100%; /* Ajuste para dispositivos menores */
+  }
+
+  .icones-sociais {
+    margin: 20px 0;
+  }
 }
