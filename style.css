@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 body {
   margin: 0;
   background-color: white; 
@@ -71,6 +72,10 @@ header {
 
 header p {
   margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+header p:hover {
+  color: #ff5403;
 }
 
 #lucas {
@@ -78,17 +83,16 @@ header p {
   font-size: 2em;
   margin-left: 2vw;
   margin-top: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+#lucas:hover{
+  color: #ff5403;
 }
 
 .titulo-lucas a {
   text-decoration: none;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
 .header-botao {
   display: flex;
   flex-direction: row;
@@ -106,7 +110,6 @@ html {
   text-decoration: none;
   font-size: 25px;
   margin-bottom: 3px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .body-fundo {
@@ -116,12 +119,12 @@ html {
   padding: 0;
 }
 .icones-sociais-1{
-  margin-left: 17em;
+  margin-left: 16em;
 }
 
 .icones-sociais-1 i {
-  font-size: 40px;
-  margin-right: 20px;
+  font-size: 45px;
+  margin-right: 25px;
   color: white;
   transition: transform 0.3s ease-in-out;
 }
@@ -162,6 +165,7 @@ h1 {
 
 strong {
   color: #87ceeb;
+  
 }
 
 .box-img {
@@ -188,7 +192,6 @@ strong {
   text-decoration: none;
   transition: transform 0.3s ease-in-out;
 }
-
 .text-body {
   font-size: 29px;
   width: 25em;
@@ -229,6 +232,8 @@ strong {
 .texto p {
   font-size: 18px;
   line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
 }
 
 .technologies {
@@ -242,7 +247,7 @@ strong {
   border-radius: 10px;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
   margin-left: 20em;
-  margin-bottom: 10em;
+  margin-bottom: 2em;
 }
 
 .tech-card {
@@ -271,6 +276,7 @@ strong {
   margin-top: 10px;
   font-size: 14px;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 #titulo-tecnologias {
@@ -287,7 +293,7 @@ strong {
   border-radius: 20px;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
   transition: 0.4s ease-in-out;
-  margin-left: 14em;
+  margin-left: 13em;
   margin-top: 8em;
   display: inline-block;
 }
@@ -379,8 +385,10 @@ strong {
 }
 .lista-info li {
   margin: 10px 0;
-  font-size: 23px;
+  font-size: 20px;
   margin-bottom: 1em;
+  font-family: 'Poppins', sans-serif;
+
 }
 .icones-sociais{
   margin-left: 12em;
@@ -398,7 +406,7 @@ strong {
 .icones-sociais i:hover {
   transform: scale(1.1); 
 }
-.formulario-contato {
+#formulario-contato {
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 8px;
@@ -406,7 +414,7 @@ strong {
   width: 50%; 
 }
 
-.formulario-contato button {
+#formulario-contato button {
   margin-top: 1em;
   padding: 10px 20px;
   background-color: #ff5403;
@@ -418,7 +426,7 @@ strong {
   transition: transform 0.3s ease-in-out;
   margin-left: 12em;
 }
-.formulario-contato button:hover{
+#formulario-contato button:hover{
   transform: scale(1.1); 
 }
 
@@ -429,7 +437,7 @@ strong {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -442,6 +450,8 @@ strong {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 @media (max-width: 768px) {
