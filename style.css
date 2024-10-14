@@ -6,7 +6,7 @@ body {
 
 .head {
   background: linear-gradient(60deg, #080831 0%, #080831 100%);
-  margin-bottom: 6em;
+  margin-bottom: 87px;
 }
 
 .waves {
@@ -70,46 +70,82 @@ header {
   z-index: 1000;
 }
 
+
 header p {
-  margin-top: 10px;
   font-family: 'Poppins', sans-serif;
+  position: relative;
 }
-header p:hover {
-  color: #ff5403;
+.hearder-info :hover {
+ color: #ff5403;
 }
 
-#lucas {
-  color: #fff;
-  font-size: 2em;
-  margin-left: 2vw;
-  margin-top: 10px;
-  font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
-}
-#lucas:hover{
-  color: #ff5403;
-}
-
-.titulo-lucas a {
-  text-decoration: none;
-}
 .header-botao {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
+  justify-content: space-evenly;
+  margin-bottom: 23px;
   margin-left: 2vw;
 }
 
 .hearder-info {
-  font-weight: 700;
+  text-decoration: none;
+  position: relative;
   font-size: 20px;
   color: #fff;
   margin-left: 2vw;
   margin-right: 2vw;
-  text-decoration: none;
   font-size: 25px;
   margin-bottom: 3px;
+}
+
+.hearder-info p {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.hearder-info::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px; 
+  width: 0;
+  height: 2px; 
+  background-color: #ffffff; 
+  transition: width 0.5s ease;
+}
+
+.hearder-info:hover::after {
+  width: 100%;
+}
+
+.nome-animado {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none; 
+  font-family: 'Poppins', sans-serif;
+  margin-left: 1em;
+}
+.nome-animado:hover{
+  color: #ff5403;
+}
+
+.nome-animado::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px; 
+  width: 0;
+  height: 3px; 
+  background-color: #ffffff; 
+  transition: width 0.5s ease; 
+}
+
+.nome-animado:hover::after {
+  width: 100%; 
 }
 
 .body-fundo {
@@ -234,6 +270,7 @@ strong {
   line-height: 1.6;
   font-family: 'Poppins', sans-serif;
   text-align: justify;
+  font-weight: 500;
 }
 
 .technologies {
@@ -247,7 +284,6 @@ strong {
   border-radius: 10px;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
   margin-left: 20em;
-  margin-bottom: 2em;
 }
 
 .tech-card {
@@ -293,7 +329,7 @@ strong {
   border-radius: 20px;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
   transition: 0.4s ease-in-out;
-  margin-left: 13em;
+  margin-left: 12em;
   margin-top: 8em;
   display: inline-block;
 }
@@ -375,8 +411,10 @@ strong {
 }
 .contato-info h2 {
   color: #ff5403; 
-  font-size: 2em;
+  font-size: 28px;
   margin-left: 5em;
+  font-family: 'Poppins', sans-serif;
+
 }
 .lista-info {
   list-style: none;
@@ -391,10 +429,10 @@ strong {
 
 }
 .icones-sociais{
-  margin-left: 12em;
+  margin-left: 11em;
 }
 .icones-sociais i {
-  font-size: 26px;
+  font-size: 29px;
   margin-right: 13px;
   color: white;
   transition: transform 0.3s ease-in-out;
