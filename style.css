@@ -332,7 +332,7 @@ strong {
   border-radius: 20px;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
   transition: 0.4s ease-in-out;
-  margin-left: 12em;
+  margin-left: 15em;
   margin-top: 8em;
   display: inline-block;
 }
@@ -509,3 +509,174 @@ strong {
     margin: 20px 0;
   }
 }
+/* Responsividade para telas menores que 1200px */
+@media (max-width: 1200px) {
+  .header-botao {
+    margin-left: 1vw;
+  }
+  
+  .container {
+    margin-left: 10em;
+  }
+
+  .first-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .h1 {
+    font-size: 3rem;
+    margin-left: 0;
+  }
+
+  .card-projeto {
+    width: 500px;
+  }
+}
+
+/* Responsividade para telas menores que 1024px */
+@media (max-width: 1024px) {
+  header {
+    height: 7vw;
+  }
+
+  .first-section {
+    min-height: 30em;
+  }
+
+  .img-profile {
+    margin-left: 0;
+    width: 20em;
+    height: 20em;
+  }
+
+  .text-body {
+    font-size: 20px;
+    width: auto;
+    margin-left: 1em;
+  }
+
+  .tech-card {
+    flex-basis: calc(100% / 4 - 30px);
+    max-width: calc(100% / 4 - 30px);
+  }
+
+  .card-projeto {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .waves {
+    height: 8vh;
+  }
+
+  .icones-sociais-1 {
+    margin-left: 5em;
+  }
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+  header {
+    height: 10vw;
+  }
+
+  .waves {
+    height: 6vh;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-left: 0;
+  }
+
+  .img-profile {
+    width: 16em;
+    height: 16em;
+  }
+
+  .text-body {
+    font-size: 18px;
+    margin-left: 0;
+    width: auto;
+  }
+
+  .tech-card {
+    flex-basis: calc(100% / 3 - 30px);
+    max-width: calc(100% / 3 - 30px);
+  }
+
+  .card-projeto {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+/* Responsividade para telas menores que 480px */
+@media (max-width: 480px) {
+  header {
+    height: 15vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nome-animado {
+    font-size: 20px;
+  }
+
+  .hearder-info {
+    font-size: 16px;
+  }
+
+  .img-profile {
+    width: 14em;
+    height: 14em;
+  }
+
+  .text-body {
+    font-size: 16px;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .tech-card {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .card-projeto {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .icones-sociais-1 {
+    margin-left: 1em;
+  }
+
+  .icones-sociais i {
+    font-size: 24px;
+  }
+
+  .contato-container {
+    padding: 20px;
+  }
+
+  #formulario-contato {
+    width: 100%;
+  }
+}
+
+
+
+
