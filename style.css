@@ -218,19 +218,23 @@ strong {
   margin-top: 5px;
 }
 
-.btn-contato {
+#btn-contato {
   padding: 2%;
   width: 6em;
   color: black;
-  margin-left: 15vw;
+  margin-left: 14vw;
   background-color: rgb(255, 255, 255);
   border-radius: 40px;
   font-size: 22px;
   text-decoration: none;
-  transition: transform 0.3s ease-in-out;
   font-family: 'Poppins', sans-serif;
-
+  transition: transform 0.3s ease-in-out;
 }
+
+#btn-contato:hover {
+background-color: #c2c2c2;
+}
+
 .text-body {
   font-size: 25px;
   width: 35em;
