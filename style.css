@@ -155,12 +155,12 @@ header p {
   padding: 0;
 }
 .icones-sociais-1{
-  margin-left: 16em;
+  margin-left: 15em;
 }
 
 .icones-sociais-1 i {
   font-size: 45px;
-  margin-right: 25px;
+  margin-right: 27px;
   color: white;
   transition: transform 0.3s ease-in-out;
 }
