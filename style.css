@@ -159,7 +159,7 @@ header p {
 }
 
 .icones-sociais-1 i {
-  font-size: 45px;
+  font-size: 42px;
   margin-right: 27px;
   color: white;
   transition: transform 0.3s ease-in-out;
@@ -194,6 +194,9 @@ h1 {
   width: 9em;
   height: 160px;
   font-family: 'Poppins', sans-serif;
+}
+#apresentacao{
+  margin-top: 17px;
 }
 
 #titulo-sobremim {
