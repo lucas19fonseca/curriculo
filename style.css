@@ -468,6 +468,8 @@ strong {
   font-size: 18px;
   transition: transform 0.3s ease-in-out;
   margin-left: 12em;
+  font-family: 'Poppins', sans-serif;
+
 }
 #formulario-contato button:hover{
   transform: scale(1.1); 
