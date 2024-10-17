@@ -298,12 +298,13 @@ background-color: #c2c2c2;
   margin-left: 20em;
 }
 
-.tech-card {
+.tech-card {  
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin: 15px;
+  height: 6em;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   flex-basis: calc(100% / 6 - 30px);
