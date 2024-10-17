@@ -301,12 +301,11 @@ background-color: #c2c2c2;
   align-items: center;
   text-align: center;
   margin: 15px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Poppins', sans-serif;
   flex-basis: calc(100% / 6 - 30px);
   max-width: calc(100% / 6 - 30px);
   transition: transform 0.3s ease-in-out;
-
 }
 .tech-card:hover{
   transform: scale(1.1); 
@@ -325,7 +324,7 @@ background-color: #c2c2c2;
 }
 
 #titulo-tecnologias {
-  margin-top: 6em;
+  margin-top: 3em;
 }
 
 .card-projeto {
