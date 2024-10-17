@@ -60,7 +60,7 @@ body {
 }
 
 header {
-  background-color: #080831;
+  background-color: #080831e9;
   height: 5vw;
   width: 100%;
   display: flex;
@@ -68,6 +68,7 @@ header {
   align-items: flex-end;
   position: fixed;
   z-index: 1000;
+  backdrop-filter: blur(10px);
 }
 
 
