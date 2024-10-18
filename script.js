@@ -1,7 +1,7 @@
 // Rolagem para o topo ao clicar no botão
 const button = document.getElementById('lucas');
 
-if (button) { // Verificar se o botão existe
+if (button) { 
     button.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
@@ -20,7 +20,7 @@ document.querySelectorAll('.hearder-info').forEach(anchor => {
             
             if (targetElement) { 
                 window.scrollTo({
-                    top: targetElement.offsetTop - 190, // Ajuste para compensar header fixo
+                    top: targetElement.offsetTop - 190, 
                     behavior: 'smooth' 
                 });
             }
