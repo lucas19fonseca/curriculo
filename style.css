@@ -348,21 +348,22 @@ background-color: #c2c2c2;
 }
 
 .card-projeto:hover {
-  height: 400px;
+  height: 420px;
 }
 
 .card-projeto .img-box-projeto {
   position: absolute;
-  width: 600px;
-  top: 5px;
+  top: 2px;
   transition: 0.5s;
 
 }
 
 .card-projeto:hover .img-box-projeto {
-  top: -210px;
+  top: -167px;
   scale: 0.95;
-  width: 632px;
+  width: 38em;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
+  border-radius: 1em;
 }
 
 .card-projeto .img-box-projeto img {
@@ -380,29 +381,31 @@ background-color: #c2c2c2;
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 0px 30px;
   text-align: center;
-  height: 0px;
+  height: 0;
   overflow: hidden;
   transition: 0.5s;
-  margin-bottom: 4em;
 }
 
 .card-projeto:hover .content-projeto {
   bottom: 11px;
-  height: 220px;
+  height: 260px;
   width: 35em;
   text-align: justify;
-  padding: 5px;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  margin-bottom: 0;
+  padding: 1em;
+}
+.card-projeto h2{
+text-align: center
 }
 
 .card-projeto .read-more-projeto {
  background: linear-gradient(90deg, #3730a3, #7e22ce);
  padding: 10px;
  width: 30em;
- margin-left: 1em;
+ margin-left: 29px;
  color: #fff;
  height: 17px;
  text-decoration: none;
