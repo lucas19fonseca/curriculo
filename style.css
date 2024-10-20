@@ -75,6 +75,7 @@ header {
 header p {
   font-family: 'Poppins', sans-serif;
   position: relative;
+
 }
 .hearder-info :hover {
  color: #ff5403;
@@ -419,7 +420,6 @@ background-color: #c2c2c2;
   text-align: center;
   color: #ffffff;
 }
-
 .card-projeto .icones-sociais-3 {
   display: flex; /* Alinha os ícones em linha */
   justify-content: center; /* Centraliza os ícones horizontalmente */
@@ -427,20 +427,12 @@ background-color: #c2c2c2;
 }
 
 .card-projeto .icones-sociais-3 i {
-  margin: 0 10px; /* Espaçamento entre os ícones */
+  margin: 0 10px; 
   color: #fff;
   font-size: 2em;
   display: inline-block;
   transition: 0.3s ease-in-out;
 }
-.card-certificados img {
-  width: 25rem;
-  height: 20rem;
-  margin-left: 15em;
-  box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
-  margin-bottom: 3em;
-}
-
 
 .card-projeto h2 {
   text-align: center;
@@ -448,10 +440,15 @@ background-color: #c2c2c2;
 }
 
 .card-projeto .icones-sociais-3 i {
-  margin-left: 29px;
+  margin-left: 20px;
   color: #fff;
-  font-size: 1em;
+  font-size: 28px;
   display: inline-block;
+}
+.icones-sociais-git2{
+  color: #ffffff;
+  margin-left: 20px;
+  font-size: 28px;
 }
 
 
