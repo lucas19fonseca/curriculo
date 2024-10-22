@@ -219,7 +219,7 @@ strong {
   width: 29em;
   height: 30em;
   border-radius: 100%;
-  margin-left: 20vw;
+  margin-left: 18vw;
   margin-top: 5px;
 }
 
@@ -449,6 +449,9 @@ background-color: #c2c2c2;
   color: #ffffff;
   margin-left: 20px;
   font-size: 28px;
+}
+.icones-sociais-git2 i:hover{
+  color: #ff0000;
 }
 
 
