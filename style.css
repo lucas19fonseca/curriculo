@@ -61,7 +61,7 @@ body {
 
 header {
   background-color: #080831d9;
-  height: 5vw;
+  height: 10%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -185,7 +185,8 @@ section {
   justify-content: start;
   align-items: center;
   gap: 2rem;
-  min-height: 52em;
+  min-height: 134%;
+  width: 100%;
 }
 
 h1 {
