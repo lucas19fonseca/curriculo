@@ -151,7 +151,7 @@ header p {
 }
 @media (max-width: 768px) {
   .titulo-lucas h2 {
-      font-size: 1.5em; /* Tamanho menor do texto para telas pequenas */
+      font-size: 10px; /* Tamanho menor do texto para telas pequenas */
   }
 
   .header-info {
@@ -230,17 +230,18 @@ strong {
   color: #87ceeb;
 }
 
-.box-img {
-  max-width: 450px;
-  padding: 1rem;
+.box-img-main {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: 20px 0; 
 }
 
 .img-profile {
-  width: 29em;
-  height: 30em;
-  border-radius: 100%;
-  margin-left: 18vw;
-  margin-top: 5px;
+  width: 90%; 
+  max-width: 330px; 
+  height: auto; 
+  border-radius: 100%; 
 }
 
 #btn-contato {
