@@ -149,6 +149,25 @@ header p {
 .nome-animado:hover::after {
   width: 100%; 
 }
+@media (max-width: 768px) {
+  .titulo-lucas h2 {
+      font-size: 1.5em; /* Tamanho menor do texto para telas pequenas */
+  }
+
+  .header-info {
+      font-size: 1em; /* Tamanho menor dos links para telas pequenas */
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-lucas h2 {
+      font-size: 1.2em; /* Tamanho ainda menor para telas muito pequenas */
+  }
+
+  .header-info {
+      font-size: 0.9em; /* Tamanho ainda menor dos links para telas muito pequenas */
+  }
+}
 
 .body-fundo {
   height: 65vh;
