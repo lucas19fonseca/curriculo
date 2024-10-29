@@ -3,7 +3,9 @@ body {
   margin: 0;
   background-color: white; 
 }
-
+html{
+  overflow-x: hidden;
+}
 .head {
   background: linear-gradient(60deg, #080831 0%, #080831 100%);
   margin-bottom: 90px;
@@ -230,19 +232,22 @@ strong {
   color: #87ceeb;
 }
 
+/* Estilo para a caixa que contém a imagem do perfil */
 .box-img-main {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  margin: 20px 0; 
+  display: flex;
+  justify-content: flex-end; /* Alinha a imagem à direita */
+  margin: 20px 0; /* Margem superior e inferior */
+  margin-left: 16em;
 }
 
+/* Estilo para a imagem do perfil */
 .img-profile {
-  width: 90%; 
-  max-width: 330px; 
-  height: auto; 
-  border-radius: 100%; 
+  width: 480px; /* Tamanho fixo para manter a forma redonda */
+  height: 490px; /* Mesma altura e largura para garantir um círculo perfeito */
+  border-radius: 48%; /* Torna a imagem totalmente redonda */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destaque */
 }
+
 
 #btn-contato {
   padding: 2%;
@@ -442,9 +447,9 @@ background-color: #c2c2c2;
   color: #ffffff;
 }
 .card-projeto .icones-sociais-3 {
-  display: flex; /* Alinha os ícones em linha */
-  justify-content: center; /* Centraliza os ícones horizontalmente */
-  margin-top: 1em; /* Adiciona um espaçamento no topo */
+  display: flex; 
+  justify-content: center; 
+  margin-top: 1em; 
 }
 
 .card-projeto .icones-sociais-3 i {
@@ -466,13 +471,18 @@ background-color: #c2c2c2;
   font-size: 28px;
   display: inline-block;
 }
+.icones-sociais-3 i:hover{
+  color: #afafaf;
+}
 .icones-sociais-git2{
   color: #ffffff;
   margin-left: 20px;
   font-size: 28px;
 }
 .icones-sociais-git2 i:hover{
-  color: #ff0000;
+  color: #afafaf;
+  transition: 0.3s ease-in-out;
+
 }
 
 
