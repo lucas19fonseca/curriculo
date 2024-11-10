@@ -588,3 +588,40 @@ background-color: #c2c2c2;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
 }*/
+
+footer{
+    background-color: #080831f3; 
+    height: 7em;
+    width: 100%;
+}
+
+.icones-sociais-4{
+  margin-left: 2em;
+}
+
+.icones-sociais-4 i {
+  font-size: 35px;
+  margin-top: 35px;
+  margin-right: 27px;
+  margin-top: 0;
+
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icones-sociais-4 a {
+  text-decoration: none; 
+}
+
+.icones-sociais-4 i:hover {
+  transform: scale(1.2); 
+}
+#brasil{
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  margin-right: 2em;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
