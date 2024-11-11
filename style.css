@@ -493,7 +493,7 @@ background-color: #c2c2c2;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
   margin-bottom: 3em;
 }
-/*
+
 .contato-container {
   display: flex;
   justify-content: space-between;
@@ -587,7 +587,7 @@ background-color: #c2c2c2;
   border-radius: 4px;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
-}*/
+}
 
 footer{
     background-color: #080831f3; 
